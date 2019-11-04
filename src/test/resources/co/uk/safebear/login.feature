@@ -12,14 +12,14 @@ Feature: Login
   *Supporters: This is what the customer calls 'Admin' users.
 
   @high-impact
-    //
+
   Scenario Outline: a valid user logs into the application
     Given I am logged out
     When I enter username "<username>" and password "<password>"
     Then the user is informed that the login in successful
     Examples:
     | username | password |
-    | tester  | letmein  |
+    | tester   | letmein  |
     | tester1  | letmein  |
     | tester2  | letmein  |
 
