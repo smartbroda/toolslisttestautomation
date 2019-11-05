@@ -45,12 +45,39 @@ public class Driver {
                     // return the FirefoxDriver
                     return new FirefoxDriver();
 
+                case ("CHROME_HEADLESS") :
+                    System.out.println("Executing on CHROME HEADLESS");
+                    chromeOptions = new ChromeOptions();
+
+                    //Set Chrome to run headlessly
+                    chromeOptions.addArguments("headless");
+
+                    // Make sure the window size is large and maximised
+                    // so nothing disappears off screen
+                    //(even in headless mode!)
+
+                    chromeOptions.addArguments("window-size=1920,1080");
+                    chromeOptions.addArguments("start-maximized");
+
+                    // Set up our ChromeDriver
+                    WebDriverManager.chromedriver().setup();
+                    return new ChromeDriver(chromeOptions);
+
                     // throws a message if it does not recognise browser
                     default:
                         throw new IllegalArgumentException("The Browser Type is Undefined");
 
 
+
         }
+
+
+
+
+
+
+
+
 
     }
 
