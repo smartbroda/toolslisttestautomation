@@ -8,23 +8,18 @@ import static org.junit.Assert.*;
 
 public class Stepdefs {
 
-    @Given("I am logged out")
-    public void i_am_logged_out() {
+    @When("a user searches for {string}")
+    public void a_user_searches_for(String courseSearchedFor) {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
 
-    @When("I enter username {string} and password {string}")
-    public void i_enter_username_and_password(String username, String password) {
+    @Then("a course containing the word {string} is displayed")
+    public void a_course_containing_the_word_is_displayed(String courseReturned) {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
 
-    @Then("the user is informed that the login in successful")
-    public void the_user_is_informed_that_the_login_in_successful() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
-    }
 
 
 }
