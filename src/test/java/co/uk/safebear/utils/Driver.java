@@ -10,7 +10,7 @@ public class Driver {
 
 
     // setting default url to http://toolslist.safebear.co.uk:8080
-    private static final String URL = System.getProperty("url", "http://toolslist.safebear.co.uk:8080");
+    private static final String URL = System.getProperty("url", "https://www.toolsqa.com/");
 
     // setting browser to chrome
     private static final String BROWSER = System.getProperty ("browser", "chrome");
