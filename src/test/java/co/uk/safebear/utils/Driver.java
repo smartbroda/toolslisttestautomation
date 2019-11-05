@@ -42,7 +42,7 @@ public class Driver {
                     // tells webdrivermanager to set up chromedriver
                     WebDriverManager.firefoxdriver().setup();
 
-                    // return the ChromeDriver
+                    // return the FirefoxDriver
                     return new FirefoxDriver();
 
                     // throws a message if it does not recognise browser
