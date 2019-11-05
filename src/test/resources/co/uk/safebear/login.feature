@@ -9,7 +9,7 @@ Feature: Login
 
   Glossary:
   *User: Someone who wants to create a Tools list using our application
-  *Supporters: This is what the customer calls 'Admin' users.
+  *Supporters: This is what the customer calls 'Admin' users
 
   @high-impact
 
