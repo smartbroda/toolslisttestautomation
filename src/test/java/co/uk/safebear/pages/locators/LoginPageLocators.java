@@ -11,7 +11,7 @@ public class LoginPageLocators {
     private By passwordLocator = By.xpath(".//input[@id='password']");
 
     // buttons
-    private By loginButtonLocator = By.xpath(".//input[@id='enter']");
+    private By loginButtonLocator = By.xpath(".//button[@id='enter']");
 
     // messages
     private By successfullLoginMessage = By.xpath(".//p[@id='rejectLogin']/b");
