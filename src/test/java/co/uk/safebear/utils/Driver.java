@@ -22,7 +22,7 @@ public class Driver {
     public static WebDriver getDriver () {
 
         // sets up chrome option to allow to maximize screen etc..
-        ChromeOptions chromeOptions;
+        ChromeOptions chromeOptions = new ChromeOptions();
 
         // create switch statement to check which browser to use and converts to brower name to uppercase
             switch (BROWSER.toUpperCase()) {
@@ -35,6 +35,16 @@ public class Driver {
 
                     // return the ChromeDriver
                     return new ChromeDriver();
+
+                case "CHROME_HEADLESS" :
+                    System.out.println("Executing on CHROME_HEADLESS");
+                    chromeOptions.setHeadless(true);
+
+                    // tells webdrivermanager to set up chromedriver
+                    WebDriverManager.chromedriver().setup();
+
+                    // return the ChromeDriver
+                    return new ChromeDriver(chromeOptions);
 
                 case "FIREFOX" :
                     System.out.println("Executing on FIREFOX");
