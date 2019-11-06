@@ -23,7 +23,7 @@ Feature: Login
     | tester1  | letmein  |
     | tester2  | letmein  |
 
-    @to-do
+    @RunThis
     Scenario: an invalid user attempts to log in
       Given I am logged out
       When I enter username "attacker" and password "dontletmein"

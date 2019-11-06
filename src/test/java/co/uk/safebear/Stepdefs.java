@@ -44,6 +44,10 @@ public class Stepdefs {
 
     @Given("I am logged out")
     public void i_am_logged_out() {
+        // it asserts that two Strings(the expected result and acutal result) are equal. if they are not, an
+        // AssertionError message, with the given error message is shown
+        // Assert that we're on the login page via using the getPageTitile(), so if test fails, then it fails along with
+        // message "We're not the Login
         assertEquals("We're not on the Login Page", "Login Page",loginPage.getPageTitle());
     }
 
