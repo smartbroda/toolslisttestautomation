@@ -20,8 +20,9 @@ public class ToolsPage {
     }
 
 
-    public String checkForFailedLoginWarning () {
+    public String checkForLoginSuccessful () {
         return browser.findElement(toolsPageLocators.getSuccessfulLoginMessage()).getText();
 
     }
+
 }
