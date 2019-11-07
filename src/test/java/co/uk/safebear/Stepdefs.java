@@ -4,6 +4,7 @@ package co.uk.safebear;
 import co.uk.safebear.pages.LoginPage;
 import co.uk.safebear.pages.ToolsPage;
 import co.uk.safebear.utils.Driver;
+import co.uk.safebear.utils.Screenshots;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -49,6 +50,7 @@ public class Stepdefs {
         // Assert that we're on the login page via using the getPageTitile(), so if test fails, then it fails along with
         // message "We're not the Login
         assertEquals("We're not on the Login Page", "Login Page",loginPage.getPageTitle());
+       // Screenshots.capturescreenshot(browser, "loginPage" + Screenshots.generateScreenShotFileName());
     }
 
     @When("I enter username {string} and password {string}")

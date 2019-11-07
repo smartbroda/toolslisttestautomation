@@ -1,6 +1,7 @@
 package co.uk.safebear.pages;
 
 import co.uk.safebear.pages.locators.LoginPageLocators;
+import co.uk.safebear.utils.Waits;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.openqa.selenium.WebDriver;
@@ -26,17 +27,18 @@ public void enterUsername (String username) {
 
 
     public void enterPassword (String password) {
-        browser.findElement(locators.getPasswordLocator()).sendKeys(password);
+        Waits.waitForElement(locators.getPasswordLocator(),browser).sendKeys();
     }
 
 
     public void clickLoginButton() {
-    browser.findElement(locators.getLoginButtonLocator()).click();
+
+    Waits.waitForElement(locators.getUsernameLocator(),browser).click();
     }
 
 
     public String checkForFailedLoginWarning () {
-    return browser.findElement(locators.getSuccessfullLoginMessage()).getText();
+    return Waits.waitForElement(locators.getSuccessfullLoginMessage(),browser).getText();
     }
 
 
