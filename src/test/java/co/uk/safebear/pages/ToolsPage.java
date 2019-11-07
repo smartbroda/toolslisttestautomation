@@ -21,7 +21,7 @@ public class ToolsPage {
     }
 
 
-    public String checkForFailedLoginWarning () {
+    public String checkSuccessfulLoginMessage () {
         return Waits.waitForElement(toolsPageLocators.getSuccessfulLoginMessage(),browser).getText();
 
     }

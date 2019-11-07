@@ -27,13 +27,13 @@ public void enterUsername (String username) {
 
 
     public void enterPassword (String password) {
-        Waits.waitForElement(locators.getPasswordLocator(),browser).sendKeys();
+        Waits.waitForElement(locators.getPasswordLocator(),browser).sendKeys(password);
     }
 
 
     public void clickLoginButton() {
 
-    Waits.waitForElement(locators.getUsernameLocator(),browser).click();
+    Waits.waitForElement(locators.getLoginButtonLocator(),browser).click();
     }
 
 
