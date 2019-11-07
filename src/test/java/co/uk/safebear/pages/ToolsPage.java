@@ -21,7 +21,7 @@ public class ToolsPage {
 
 
     public String checkForLoginSuccessful () {
-        return browser.findElement(toolsPageLocators.getSuccessfulLoginMessage()).getText();
+        return browser.findElement(toolsPageLocators.successfulLoginMessage()).getText();
 
     }
 

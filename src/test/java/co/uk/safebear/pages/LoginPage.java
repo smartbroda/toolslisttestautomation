@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.openqa.selenium.WebDriver;
 
 @RequiredArgsConstructor
+
 public class LoginPage {
 
 LoginPageLocators locators = new LoginPageLocators();
@@ -36,7 +37,7 @@ public void enterUsername (String username) {
 
 
     public String checkForFailedLoginWarning () {
-    return browser.findElement(locators.getSuccessfullLoginMessage()).getText();
+    return browser.findElement(locators.unsuccessfulLoginMessage()).getText();
     }
 
 
