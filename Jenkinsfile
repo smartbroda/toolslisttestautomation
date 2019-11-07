@@ -31,7 +31,7 @@ pipeline {
                     // The maven command to generate our report
                     bat "mvn cluecumber-report:reporting"
 
-                    // Publish our report in Jenkins
+                    // Publish our report in Jenkins.
                     publishHTML([
                             allowMissing         : false,
                             alwaysLinkToLastBuild: false,
