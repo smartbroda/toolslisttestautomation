@@ -14,6 +14,8 @@ public class ToolsPage {
     @NonNull
     WebDriver browser;
 
+
+
     public String getPageTitle() {
 
         return browser.getTitle();
@@ -21,7 +23,7 @@ public class ToolsPage {
 
 
     public String checkForLoginSuccessful () {
-        return browser.findElement(toolsPageLocators.successfulLoginMessage()).getText();
+        return browser.findElement(toolsPageLocators.getSuccessfulLoginMessage()).getText();
 
     }
 
