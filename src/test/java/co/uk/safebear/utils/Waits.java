@@ -13,7 +13,7 @@ public class Waits {
     public static WebElement waitForElement(By locator, WebDriver driver){
 
         // Maximum time to wait in seconds
-        int WAIT = 30;
+        int WAIT = 120;
 
         try {
 

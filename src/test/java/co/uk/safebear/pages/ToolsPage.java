@@ -15,6 +15,9 @@ public class ToolsPage {
     @NonNull
     WebDriver browser;
 
+
+
+
     public String getPageTitle() {
 
         return browser.getTitle();
@@ -25,4 +28,10 @@ public class ToolsPage {
         return Waits.waitForElement(toolsPageLocators.getSuccessfulLoginMessage(),browser).getText();
 
     }
+
+ //   public void clickLogoutButton() {
+//
+//        Waits.waitForElement(locators.getLogoutButtonLocator(),browser).click();
+//    }
+
 }

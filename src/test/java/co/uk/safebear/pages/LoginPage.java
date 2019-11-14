@@ -15,7 +15,10 @@ LoginPageLocators locators = new LoginPageLocators();
 @NonNull
 WebDriver browser;
 
-public String getPageTitle() {
+
+
+
+    public String getPageTitle() {
 
     return browser.getTitle();
 }
@@ -33,8 +36,10 @@ public void enterUsername (String username) {
 
     public void clickLoginButton() {
 
-    Waits.waitForElement(locators.getLoginButtonLocator(),browser).click();
+        Waits.waitForElement(locators.getLoginButtonLocator(),browser).click();
     }
+
+//
 
 
     public String checkForFailedLoginWarning () {

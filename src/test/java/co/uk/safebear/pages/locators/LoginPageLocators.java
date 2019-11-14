@@ -13,7 +13,25 @@ public class LoginPageLocators {
     // buttons
     private By loginButtonLocator = By.xpath(".//button[@id='enter']");
 
+
     // messages
     private By successfullLoginMessage = By.xpath(".//p[@id='rejectLogin']/b");
+
+    public By getUsernameLocator() {
+        return usernameLocator;
+    }
+
+    public By getPasswordLocator() {
+        return passwordLocator;
+    }
+
+    public By getLoginButtonLocator() {
+        return loginButtonLocator;
+    }
+
+    public By getSuccessfullLoginMessage() {
+        return successfullLoginMessage;
+    }
+
 
 }
