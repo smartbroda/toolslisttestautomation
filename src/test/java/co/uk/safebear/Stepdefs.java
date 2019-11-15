@@ -50,8 +50,8 @@ public class Stepdefs {
 
     @Then("a course containing the word {string} is displayed")
     public void a_course_containing_the_word_is_displayed(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+        assertThat("Search failed or Search Result didn't appear",
+                resultsPage.checkSearchResultTitle(), containsString("Cucumber Tutorial"));
     }
 
 
