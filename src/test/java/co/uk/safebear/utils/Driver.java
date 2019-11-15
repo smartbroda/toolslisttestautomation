@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Driver {
 
 
-    // setting default url to http://toolslist.safebear.co.uk:8080
+    // setting default url to https://www.toolsqa.com/
     private static final String URL = System.getProperty("url", "https://www.toolsqa.com/");
 
     // setting browser to chrome
@@ -24,7 +24,7 @@ public class Driver {
         // sets up chrome option to allow to maximize screen etc..
         ChromeOptions chromeOptions = new ChromeOptions();
 
-        // create switch statement to check which browser to use and converts to brower name to uppercase
+        // create switch statement to check which browser to use and converts to browser name to uppercase
             switch (BROWSER.toUpperCase()) {
 
                 case "CHROME" :

@@ -7,10 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"json:target/cucumber-report/cucumber.json"},
-        // runs @to-do only
-tags = "not @to-do"
-// glue = "path to Stepdefs if not in the same folder",
-// features = "path to features if not in co.uk.safebear folder"
+        features = "src/test/resources/feature/searchForCourse1", //refer to Feature file
+        tags = {"@RunThis"}
         )
 public class RunCucumberTest {
 }
