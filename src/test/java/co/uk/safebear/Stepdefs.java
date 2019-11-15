@@ -27,16 +27,16 @@ public class Stepdefs {
         browser.navigate().to(Driver.getURL());
     }
 
-//    @After
-//    public void tearDown() {
-//        try {
-//            Thread.sleep(Integer.parseInt(System.getProperty("sleep", "2000")));
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        browser.quit();
-//    }
+    @After
+    public void tearDown() {
+        try {
+            Thread.sleep(Integer.parseInt(System.getProperty("sleep", "2000")));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        browser.quit();
+    }
 
 
 
@@ -45,7 +45,7 @@ public class Stepdefs {
     public void a_user_searches_for(String searchName) {
         homePage.clickSearchButton();
         homePage.enterSearch(searchName);
-        //homePage.clickSearchSubmitButton();
+        homePage.clickSearchSubmitButton();
     }
 
     @Then("a course containing the word {string} is displayed")

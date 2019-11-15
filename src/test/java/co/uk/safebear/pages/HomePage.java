@@ -2,11 +2,9 @@ package co.uk.safebear.pages;
 
 
 import co.uk.safebear.pages.locators.HomePageLocators;
-import lombok.AllArgsConstructor;
-import lombok.NonNull;
 import org.openqa.selenium.WebDriver;
 
-@AllArgsConstructor
+
 public class HomePage {
 
 
@@ -26,9 +24,9 @@ public class HomePage {
         browser.findElement(homeLocators.getSearchFieldLocator()).sendKeys(searchName);
     }
 
-    //public void clickSearchSubmitButton () {
-     //   browser.findElement(homeLocators.getSearchSubmitButton()).click();
-   // }
+    public void clickSearchSubmitButton () {
+       browser.findElement(homeLocators.getSearchSubmitButton()).click();
+    }
 
 
 }
