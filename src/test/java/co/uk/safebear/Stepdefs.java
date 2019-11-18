@@ -48,10 +48,10 @@ public class Stepdefs {
         homePage.clickSearchSubmitButton();
     }
 
-    @Then("a course containing the word {string} is displayed")
-    public void a_course_containing_the_word_is_displayed(String string) {
+    @Then("a course containing the words \\(Search Results for: cucumber) is displayed")
+    public void a_course_containing_the_words_Search_Results_for_cucumber_is_displayed() {
         assertThat("Search failed or Search Result didn't appear",
-                resultsPage.checkSearchResultTitle(), containsString("Cucumber Tutorial"));
+                resultsPage.checkSearchResultTitle(), containsString("Search Results for: cucumber"));
     }
 
 

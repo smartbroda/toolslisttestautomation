@@ -13,6 +13,7 @@ public class ResultsPage {
 WebDriver browser;
 
     public ResultsPage(WebDriver browser) {
+        this.browser = browser;
     }
 
 

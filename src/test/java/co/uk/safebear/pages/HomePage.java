@@ -14,6 +14,7 @@ public class HomePage {
     WebDriver browser;
 
     public HomePage(WebDriver browser) {
+        this.browser = browser;
     }
 
 

@@ -7,9 +7,9 @@ public class HomePageLocators {
     // search button
     By searchButtonLocator = By.xpath(".//*[@id='page']/div[1]/header/nav/div/div/form/a/i");
     // search field
-    By searchFieldLocator = By.xpath(".//div[@class='popup-search-wrap right-overflow']/input[@id='the7-micro-widget-search']");
+    By searchFieldLocator = By.xpath("//*[@id='the7-micro-widget-search']");
     // search submit button
-    By searchSubmitButton = By.xpath(".//div[@class='popup-search-wrap right-overflow']/a/i[@class='the7-mw-icon-search-bold']");
+    By searchSubmitButton = By.xpath("//*[@id='page']/div[1]/header/nav/div/div/form/div/a/i");
 
 
     public By getSearchButtonLocator() {
@@ -18,7 +18,7 @@ public class HomePageLocators {
 
 
     public By getSearchFieldLocator() {
-       return getSearchFieldLocator();
+        return searchFieldLocator;
     }
 
     public By getSearchSubmitButton() {

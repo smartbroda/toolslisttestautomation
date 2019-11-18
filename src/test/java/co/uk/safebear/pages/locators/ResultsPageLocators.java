@@ -6,7 +6,7 @@ public class ResultsPageLocators {
 
     // locator for first result
 
-    By searchResult = By.xpath(".//a[@title='Cucumber Tutorial']");
+    By searchResult = By.xpath("//*[@id='page']/div[4]/div/div[1]");
 
     public By getSearchResult() {
         return searchResult;

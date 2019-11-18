@@ -7,4 +7,4 @@ Feature: Search for course
   @RunThis
   Scenario: A user searches for a course
     When a user searches for "cucumber"
-    Then a course containing the word "cucumber" is displayed
+    Then a course containing the words (Search Results for: cucumber) is displayed
