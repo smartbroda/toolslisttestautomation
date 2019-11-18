@@ -29,9 +29,5 @@ public class ToolsPage {
 
     }
 
- //   public void clickLogoutButton() {
-//
-//        Waits.waitForElement(locators.getLogoutButtonLocator(),browser).click();
-//    }
 
 }

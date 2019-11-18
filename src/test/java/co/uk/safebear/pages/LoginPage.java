@@ -39,7 +39,6 @@ public void enterUsername (String username) {
         Waits.waitForElement(locators.getLoginButtonLocator(),browser).click();
     }
 
-//
 
 
     public String checkForFailedLoginWarning () {

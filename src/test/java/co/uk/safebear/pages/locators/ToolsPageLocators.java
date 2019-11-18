@@ -11,13 +11,9 @@ public class ToolsPageLocators {
 
 
 
-    public By getSuccessfulLoginMessage() {
-        return successfulLoginMessage;
-    }
+//    public By getSuccessfulLoginMessage() {
+//        return successfulLoginMessage;
+//    }
 
-          // button
-    //    public By getLogoutButtonLocator() {
-   //        return logoutButtonLocator;
-  //    }
 
 }
