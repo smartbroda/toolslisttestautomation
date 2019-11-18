@@ -1,6 +1,7 @@
 package co.uk.safebear.pages;
 
 import co.uk.safebear.pages.locators.ResultsPageLocators;
+import co.uk.safebear.utils.Waits;
 import org.openqa.selenium.WebDriver;
 
 public class ResultsPage {
@@ -16,7 +17,7 @@ WebDriver browser;
 
 
     public String checkSearchResultTitle () {
-        return browser.findElement(resultsLocators.getSearchResult()).getText();
+        return Waits.waitForElement(resultsLocators.getSearchResult(),browser).getText();
 
     }
 

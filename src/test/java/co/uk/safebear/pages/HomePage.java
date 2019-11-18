@@ -2,6 +2,7 @@ package co.uk.safebear.pages;
 
 
 import co.uk.safebear.pages.locators.HomePageLocators;
+import co.uk.safebear.utils.Waits;
 import org.openqa.selenium.WebDriver;
 
 
@@ -17,15 +18,15 @@ public class HomePage {
 
 
     public void clickSearchButton () {
-        browser.findElement(homeLocators.getSearchButtonLocator()).click();
+        Waits.waitForElement(homeLocators.getSearchButtonLocator(),browser).click();
     }
 
     public void enterSearch (String searchName) {
-        browser.findElement(homeLocators.getSearchFieldLocator()).sendKeys(searchName);
+        Waits.waitForElement(homeLocators.getSearchFieldLocator(),browser).sendKeys(searchName);
     }
 
     public void clickSearchSubmitButton () {
-       browser.findElement(homeLocators.getSearchSubmitButton()).click();
+        Waits.waitForElement(homeLocators.getSearchSubmitButton(),browser).click();
     }
 
 
