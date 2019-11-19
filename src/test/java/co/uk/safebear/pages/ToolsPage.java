@@ -23,6 +23,10 @@ public class ToolsPage {
         return browser.getTitle();
     }
 
+//    public void clickLogoutButton() {
+//        Waits.waitForElement(toolsPageLocators.getLogOutButton(),browser).click();
+//    }
+
 
     public String checkSuccessfulLoginMessage () {
         return Waits.waitForElement(toolsPageLocators.getSuccessfulLoginMessage(),browser).getText();

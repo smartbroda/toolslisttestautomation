@@ -58,13 +58,14 @@ public class Stepdefs {
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
         loginPage.clickLoginButton();
-        //loginPage.clickLogoutButton();
+
 
     }
 
     @Then("the user is informed that the login in successful")
     public void the_user_is_informed_that_the_login_in_successful() {
         assertThat("Login failed or the Login Successful message didn't appear", toolsPage.checkSuccessfulLoginMessage(), containsString("Login Successful"));
+//        toolsPage.clickLogoutButton();
     }
 
     @Then("the user is informed that the login is unsuccessful")

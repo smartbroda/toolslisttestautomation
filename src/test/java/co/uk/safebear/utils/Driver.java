@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Driver {
 
 
-    // setting default url to http://toolslist.safebear.co.uk:8080
+    // setting default url to §
     private static final String URL = System.getProperty("url", "http://toolslist.safebear.co.uk:8080");
 
     // setting browser to chrome
