@@ -11,9 +11,4 @@ public class ToolsPageLocators {
 
 
 
-//    public By getSuccessfulLoginMessage() {
-//        return successfulLoginMessage;
-//    }
-
-
 }

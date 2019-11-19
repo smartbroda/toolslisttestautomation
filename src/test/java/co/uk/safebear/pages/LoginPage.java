@@ -42,7 +42,7 @@ public void enterUsername (String username) {
 
 
     public String checkForFailedLoginWarning () {
-    return Waits.waitForElement(locators.getSuccessfullLoginMessage(),browser).getText();
+    return Waits.waitForElement(locators.getUnSuccessfullLoginMessage(),browser).getText();
     }
 
 
