@@ -42,6 +42,28 @@ public class LoginTest {
     }
 
     @Test
+    public void successfulLoginTest1() {
+        Assert.assertEquals("Login Page", loginPage.getPageTitle());
+
+        loginPage.enterUsername("tester");
+        loginPage.enterPassword("letmein");
+        loginPage.clickLoginButton();
+
+        Assert.assertEquals("Login Successful", toolsPages.checkForLoginSuccessful());
+    }
+
+    @Test
+    public void successfulLoginTest2() {
+        Assert.assertEquals("Login Page", loginPage.getPageTitle());
+
+        loginPage.enterUsername("tester");
+        loginPage.enterPassword("letmein");
+        loginPage.clickLoginButton();
+
+        Assert.assertEquals("Login Successful", toolsPages.checkForLoginSuccessful());
+    }
+
+    @Test
     public void unSuccessfulLoginTest() {
         Assert.assertEquals("Login Page", loginPage.getPageTitle());
 
