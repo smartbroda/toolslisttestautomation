@@ -17,6 +17,11 @@ public class HomePage {
         this.browser = browser;
     }
 
+    public String getPageTitle() {
+
+        return browser.getTitle();
+    }
+
 
     public void clickSearchButton () {
         Waits.waitForElement(homeLocators.getSearchButtonLocator(),browser).click();

@@ -6,5 +6,6 @@ Feature: Search for course
 
   @RunThis
   Scenario: A user searches for a course
+    Given I am on the ToolsQA homepage
     When a user searches for "cucumber"
     Then a course containing the words (Search Results for: cucumber) is displayed
