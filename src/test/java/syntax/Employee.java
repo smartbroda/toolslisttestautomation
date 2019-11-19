@@ -31,6 +31,6 @@ public class Employee {
     }
 
     public  void givePayRise() {
-        salary = salary + 10;
+        salary = salary + 250;
     }
 }
