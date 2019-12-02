@@ -19,7 +19,7 @@ pipeline {
             steps {
 
                 // The maven command to run our tests
-                bat "mvn -Dtest=${params.tests} test -Durl=${params.url} -Dbrowser=${params.browser} -Dsleep=${params.sleep}"
+                sh "mvn -Dtest=${params.tests} test -Durl=${params.url} -Dbrowser=${params.browser} -Dsleep=${params.sleep}"
             }
 
             // Run this next step after the tests have run through
@@ -29,7 +29,7 @@ pipeline {
                 always {
 
                     // The maven command to generate our report
-                    bat "mvn cluecumber-report:reporting"
+                    sh "mvn cluecumber-report:reporting"
 
                     // Publish our report in Jenkins.
                     publishHTML([
