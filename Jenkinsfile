@@ -22,7 +22,7 @@ pipeline {
                 bat "mvn -Dtest=${params.tests} test -Durl=${params.url} -Dbrowser=${params.browser} -Dsleep=${params.sleep}"
             }
 
-            // Run this next step after the tests have run
+            // Run this next step after the tests have run through
             post {
 
                 // Run this next step even if our tests fail
