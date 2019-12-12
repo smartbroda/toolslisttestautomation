@@ -19,6 +19,7 @@ pipeline {
             steps {
 
                 // The maven command to run our tests
+                withMaven(
                 sh "mvn -Dtest=${params.tests} test -Durl=${params.url} -Dbrowser=${params.browser} -Dsleep=${params.sleep}"
             }
 
