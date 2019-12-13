@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"json:target/cucumber-report/cucumber.json"},
-        features = "src/test/resources/feature/searchForCourse", //refer to Feature file
+        features = "src/test/resources/feature/searchForCourse1", //refer to Feature file
         tags = {"@RunThis"}
         )
 public class RunCucumberTest {
