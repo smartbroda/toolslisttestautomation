@@ -20,6 +20,8 @@ pipeline {
 
                 // The maven command to run our tests
                 withMaven(
+                    maven: 'MavenLatest'{
+
                 sh "mvn -Dtest=${params.tests} test -Durl=${params.url} -Dbrowser=${params.browser} -Dsleep=${params.sleep}"
             }
 
@@ -30,7 +32,11 @@ pipeline {
                 always {
 
                     // The maven command to generate our report
+                    withMaven(
+                        maven: 'MavenLatest'{
                     sh "mvn cluecumber-report:reporting"
+
+                    }
 
                     // Publish our report in Jenkins.
                     publishHTML([
@@ -46,4 +52,6 @@ pipeline {
         }
 
     }
+}
+
 }
