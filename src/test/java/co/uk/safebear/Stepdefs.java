@@ -50,7 +50,7 @@ public class Stepdefs {
         // Assert that we're on the login page via using the getPageTitile(), so if test fails, then it fails along with
         // message "We're not the Login
         assertEquals("We're not on the Login Page", "Login Page",loginPage.getPageTitle());
-       // Screenshots.capturescreenshot(browser, "loginPage" + Screenshots.generateScreenShotFileName());
+       Screenshots.capturescreenshot(browser, "loginPage" + Screenshots.generateScreenShotFileName());
     }
 
     @When("I enter username {string} and password {string}")
@@ -71,6 +71,7 @@ public class Stepdefs {
     @Then("the user is informed that the login is unsuccessful")
     public void the_user_is_informed_that_the_login_is_unsuccessful() {
         assertThat("Login failed or the Login Successful message didn't appear", loginPage.checkForFailedLoginWarning(), containsString("WARNING: Username or Password is incorrect"));
+        Screenshots.capturescreenshot(browser, "unsuccessful" + Screenshots.generateScreenShotFileName());
     }
 
 
